@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cockatiel-World</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: darkred;
+        border: 1px solid darkred;
+        padding: 10px 0 10px 0;
+      }
+      h2 {
+        text-align: center;
+        font-size: 22px;
+        padding: 5px 0 5px 0;
+        line-height: 1.5;
+      }
+      p {
+        max-width: 90;
+        line-height: 1.5;
+        font-size: 16px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+        max-width: 100%;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 20px 40px;
+        border-radius: 10px;
+        border: none;
+        font-size: 18px;
+        background-color: darkred;
+        color: white;
+        box-shadow: rgba(54, 4, 4, 0.109) 6px 6px 6px 6px;
+        transition: all 180ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.7;
+        cursor: pointer;
+      }
+      .Autor {
+        text-align: center;
+        font-size: 14px;
+      }
+      .autorLink {
+        text-decoration: none;
+        color: rgb(36, 10, 10);
+        font-size: 14px;
+      }
+      .autorLink:hover {
+        text-decoration: underline;
+      }
+      .container {
+        background: linear-gradient(#f2e9d0, #eaceb4, #e79e85, #bb5a5a);
+        max-width: 600px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 15px;
+        padding: 35px 70px;
+        margin: 40px auto;
+      }
+      .Info {
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 14px;
+        color: rgb(36, 10, 10);
+      }
+      .Info:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>We love Parrots</h1>
+      <h2>🦜 Especially Cockatiels ❤️</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/051/030/original/258008305_430483305136881_3569426145215520857_n.jpg?1667305531"
+        alt
+        width="450px;"
+      />
+      <hr />
+      <p>
+        <strong>A cockatiel is a popular choice for a pet bird.</strong> It is a
+        small parrot with a variety of color patterns and a head crest. They are
+        attractive as well as friendly. Due to their smaller size, cockatiel
+        care and taming are easier than other parrot species. They are capable
+        of mimicking speech, although they can be difficult to understand. These
+        birds are good at whistling and you can teach them to sing along to
+        tunes.
+      </p>
+      <a
+        href="https://de.wikipedia.org/wiki/Nymphensittich"
+        target="_blank"
+        class="Info"
+        >Learn more on Wikipedia</a
+      >
+      <br />
+      <button>Buy a cockatiel</button>
+      <p class="Autor">
+        Coded by
+        <a
+          href="https://www.instagram.com/ann_my94/"
+          target="_blank"
+          class="autorLink"
+          >Anna Myslyva</a
+        >
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is Your name?");
+        let email = prompt("What is Your email-address?");
+        alert(
+          "Hello " +
+            name +
+            ", we will be in touch, thanks for Your e-address: " +
+            email +
+            ". Meanwhile wait for Your new cockatiel-buddy."
+        );
+      }
+      let buyButton = document.querySelector("button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
